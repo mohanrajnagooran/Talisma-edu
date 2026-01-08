@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Talisma</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-container">
+        <!-- Logo -->
+        <div class="logo">
+          <img src="logo white.png" alt="" width="200" />
+        </div>
+
+        <!-- Desktop Navigation -->
+        <nav class="nav-desktop">
+          <a href="#">Solutions</a>
+          <a href="#">Platform</a>
+          <a href="#">Resources</a>
+          <a href="#">About</a>
+        </nav>
+
+        <!-- CTA Button -->
+        <button class="cta-btn desktop-only">Get Started</button>
+
+        <!-- Mobile Menu Button -->
+        <button class="menu-btn" onclick="toggleMenu()">
+          <span id="menu-icon">☰</span>
+        </button>
+      </div>
+
+      <!-- Mobile Navigation -->
+      <nav class="nav-mobile" id="mobileMenu">
+        <a href="#">Solutions</a>
+        <a href="#">Platform</a>
+        <a href="#">Resources</a>
+        <a href="#">About</a>
+        <button class="cta-btn mobile-cta">Get Started</button>
+      </nav>
+    </header>
+
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById("mobileMenu");
+        const icon = document.getElementById("menu-icon");
+
+        menu.classList.toggle("open");
+        icon.textContent = menu.classList.contains("open") ? "✕" : "☰";
+      }
+    </script>
+
+    <section class="hero">
+      <div class="hero-container">
+        <div class="hero-grid">
+          <!-- LEFT CONTENT -->
+          <div class="hero-content">
+            <!-- Badge -->
+            <div class="hero-badge">AI-powered Education Solutions</div>
+
+            <!-- Heading -->
+            <div class="hero-text">
+              <h1>AI in <span>Higher Ed</span></h1>
+              <p>
+                Transforming Indian higher education with AI-powered platforms
+                that automate admissions, personalize learning, and drive career
+                intelligence.
+              </p>
+            </div>
+
+            <!-- Email Input -->
+            <div class="hero-form">
+              <input
+                type="email"
+                id="email"
+                placeholder="Enter email to book a walkthrough"
+              />
+              <button>Book Walkthrough</button>
+            </div>
+
+            <!-- Features -->
+            <div class="hero-features">
+              <div>
+                 <span className="text-purple-400">•</span>
+                <span>Admissions Yield</span>
+              </div>
+              <div>
+                
+                <span>OCC Compliance</span>
+              </div>
+              <div>
+                <span className="text-purple-400">•</span>
+                <span>Student Retention</span>
+              </div>
+              <div>
+                <span className="text-purple-400">•</span>
+                <span>Outcome-Based Ed</span>
+              </div>
+              <div>
+                <span className="text-purple-400">•</span>
+                <span>Skill Mapping</span>
+              </div>
+              <div>
+                <span className="text-purple-400">•</span>
+                <span>Career Readiness</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- RIGHT IMAGE -->
+          <div class="hero-image-wrapper">
+            <div class="image-border">
+              <img src="32914.jpg" alt="Professional educator" />
+            </div>
+
+            <!-- Stats Badge -->
+            <div class="stats-badge">
+              <strong>94.8%</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- challenges section -->
+    <section class="challenges">
+      <div class="challenges-container">
+        <div class="challenges-grid">
+          <!-- LEFT CONTENT -->
+          <div class="challenges-left">
+            <h2>
+              The Critical Challenges Facing
+              <span>Higher Education</span>
+            </h2>
+            <p>
+              Institutions spend 50% of their time on manual processing and
+              administrative overload, limiting visibility into student
+              outcomes.
+            </p>
+          </div>
+
+          <!-- RIGHT LIST -->
+          <div class="challenges-right">
+            <div class="challenge-item">
+              <div class="challenge-number">01</div>
+              <div class="challenge-content">
+                <h3>Manual Admissions Bottlenecks</h3>
+                <p>
+                  Lower application-to-enrollment conversion due to generic
+                  communication and document verification delays.
+                </p>
+              </div>
+            </div>
+
+            <div class="challenge-item">
+              <div class="challenge-number">02</div>
+              <div class="challenge-content">
+                <h3>Fragmented Learning Ecosystem</h3>
+                <p>
+                  SIS, LMS, and assessment platforms lack integration, hiding
+                  critical insights into student progress.
+                </p>
+              </div>
+            </div>
+
+            <div class="challenge-item">
+              <div class="challenge-number">03</div>
+              <div class="challenge-content">
+                <h3>Employability Outcome Pressure</h3>
+                <p>
+                  Institutions are judged by industry relevance and placement
+                  rates, needing better skill-to-market mapping.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- features section -->
+    <section class="features">
+      <div class="features-container">
+        <!-- SECTION HEADER -->
+        <div class="features-header">
+          <h2>What can <span>Talisma</span> do for You?</h2>
+          <p>
+            We've developed proven solutions across the entire institutional
+            lifecycle, each designed to integrate seamlessly with your existing
+            systems.
+          </p>
+        </div>
+
+        <!-- FEATURES GRID -->
+        <div class="features-grid">
+          <!-- CARD 1 -->
+          <div class="feature-card">
+            <div class="icon-box blue-bg">🛡️</div>
+            <p class="feature-tag blue-text">
+              FASTER, SMARTER, STUDENT-CENTRIC
+            </p>
+            <h3>Admissions Automation</h3>
+            <p class="feature-desc">
+              Digitize the entire lifecycle with automated document
+              verification, AI applicant scoring, and predictive analytics.
+            </p>
+            <a href="#" class="feature-link blue-text">
+              Learn more <span>→</span>
+            </a>
+          </div>
+
+          <!-- CARD 2 -->
+          <div class="feature-card">
+            <div class="icon-box purple-bg">🎓</div>
+            <p class="feature-tag purple-text">
+              INTELLIGENT, INTEGRATED, OUTCOME-DRIVEN
+            </p>
+            <h3>Intelligent LMS</h3>
+            <p class="feature-desc">
+              Unify content, assessments, and analytics. Personalized pathways
+              adapt to student performance signals.
+            </p>
+            <a href="#" class="feature-link purple-text">
+              Learn more <span>→</span>
+            </a>
+          </div>
+
+          <!-- CARD 3 -->
+          <div class="feature-card">
+            <div class="icon-box red-bg">📈</div>
+            <p class="feature-tag red-text">FROM CURRICULUM TO CAREER</p>
+            <h3>Employability Intelligence</h3>
+            <p class="feature-desc">
+              Apply AI to map student skills to market demand and identify gaps
+              for career readiness and placement matching.
+            </p>
+            <a href="#" class="feature-link red-text">
+              Learn more <span>→</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- transform section -->
+    <section class="transform">
+      <div class="transform-container">
+        <!-- HEADER -->
+        <div class="transform-header">
+          <h2>Ready to <span>Transform</span> Your Institution</h2>
+        </div>
+
+        <!-- BENEFITS -->
+        <div class="transform-grid">
+          <div class="transform-item">
+            <div class="check-icon">✔</div>
+            <div class="transform-content">
+              <h3>Implementation Support</h3>
+              <p>
+                We don't stop at adoption! We're committed to ensuring a smooth
+                integration with your existing systems and infrastructure, so
+                you can start seeing results from day one.
+              </p>
+            </div>
+          </div>
+
+          <div class="transform-item">
+            <div class="check-icon">✔</div>
+            <div class="transform-content">
+              <h3>Proven Results</h3>
+              <p>
+                Our AI-driven platforms have helped institutions across the
+                country improve student engagement, decrease time-to-degree, and
+                enhance administrative efficiency with predictable, scalable
+                results.
+              </p>
+            </div>
+          </div>
+
+          <div class="transform-item">
+            <div class="check-icon">✔</div>
+            <div class="transform-content">
+              <h3>Pilot Program</h3>
+              <p>
+                Not ready for a full rollout yet? Our pilot programs let you
+                test the impact before making a commitment, so you can see how
+                Talisma fits with your institution's unique culture.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+      <div class="cta-container">
+        <div class="cta-content">
+          <!-- TEXT -->
+          <div class="cta-text">
+            <h2>
+              The future of higher education is intelligent, integrated, and
+              student-centric.
+            </h2>
+            <p>
+              Let's build it together. Our innovative, technology-driven
+              solutions are designed to help your institution thrive.
+            </p>
+          </div>
+
+          <!-- BUTTON -->
+          <button class="cta-button">Download a Whitepaper</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+      <div class="faq-container">
+        <h2 class="faq-title">FAQs</h2>
+
+        <div class="faq-list">
+          <!-- FAQ ITEM -->
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>What does Talisma actually do?</span>
+              <span class="chevron">›</span>
+            </button>
+            <div class="faq-answer">
+              Talisma provides AI-driven solutions for higher education
+              institutions, including admissions acceleration, intelligent LMS,
+              and data analytics to improve student outcomes.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span
+                >How is Talisma different from other LMS software or Academic
+                CRM?</span
+              >
+              <span class="chevron">›</span>
+            </button>
+            <div class="faq-answer">
+              Unlike traditional LMS platforms, Talisma combines AI-powered
+              personalization with comprehensive analytics and admissions tools
+              to support the entire student journey.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Can Talisma integrate with our existing systems?</span>
+              <span class="chevron">›</span>
+            </button>
+            <div class="faq-answer">
+              Yes, Talisma is designed to seamlessly integrate with your
+              existing infrastructure and systems, ensuring smooth
+              implementation without disrupting your current workflows.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span
+                >Does Talisma support both in-person and remote
+                administration?</span
+              >
+              <span class="chevron">›</span>
+            </button>
+            <div class="faq-answer">
+              Absolutely. Talisma supports both in-person and remote
+              administration, providing flexible solutions that adapt to your
+              institution's needs.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Is Talisma suitable for larger universities?</span>
+              <span class="chevron">›</span>
+            </button>
+            <div class="faq-answer">
+              Yes, Talisma scales to meet the needs of institutions of all
+              sizes, from small colleges to large universities with thousands of
+              students.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      const questions = document.querySelectorAll(".faq-question");
+
+      questions.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const item = btn.parentElement;
+          const isOpen = item.classList.contains("open");
+
+          document.querySelectorAll(".faq-item").forEach((i) => {
+            i.classList.remove("open");
+          });
+
+          if (!isOpen) {
+            item.classList.add("open");
+          }
+        });
+      });
+    </script>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- TOP GRID -->
+        <div class="footer-grid">
+          <!-- BRAND -->
+          <div class="footer-brand">
+            <div class="brand-logo">
+              <img src="logo white.png" alt="">
+            </div>
+            <p>
+              Empowering educational institutions with AI-driven solutions to
+              enhance student success and streamline operations.
+            </p>
+          </div>
+
+          <!-- SOLUTIONS -->
+          <div class="footer-col">
+            <h3>Solutions</h3>
+            <ul>
+              <li><a href="#">AI Admissions</a></li>
+              <li><a href="#">Intelligent LMS</a></li>
+              <li><a href="#">Analytics Platform</a></li>
+            </ul>
+          </div>
+
+          <!-- PLATFORM -->
+          <div class="footer-col">
+            <h3>Platform</h3>
+            <ul>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Integration</a></li>
+              <li><a href="#">Security</a></li>
+            </ul>
+          </div>
+
+          <!-- CONNECT -->
+          <div class="footer-col">
+            <h3>Connect</h3>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Careers</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- BOTTOM BAR -->
+        <div class="footer-bottom">
+          <p>© 2026 Talisma Solutions, LLC. All rights reserved.</p>
+          <div class="footer-links">
+            <a href="#">Privacy</a>
+            <a href="#">Cookies</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
