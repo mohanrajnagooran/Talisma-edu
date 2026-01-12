@@ -55,6 +55,9 @@
 .nav-desktop a:hover,
 .nav-mobile a:hover {
   color: #ffffff;
+  background:#7c3aed;
+  padding:2px;
+  border-radius:4px;
 }
 
 /* CTA Button */
@@ -150,12 +153,16 @@
   width: fit-content;
 }
 
-.hero-text h1 {
+.hero-text h2 {
   font-size: 48px;
-  margin-bottom: 16px;
+  color: #ff4d6d;
+}
+.hero-text h4{
+  font-size: 36px;
+  margin-bottom:10px
 }
 
-.hero-text h1 span {
+.hero-text h4 span {
   color: #ff4d6d;
 }
 
@@ -213,10 +220,11 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 12px 48px;
   padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .hero-features span {
-  font-size: 12px;
+  font-size: 16px;
   color: #c084fc;
 }
 
@@ -228,11 +236,11 @@
 .image-border {
   padding: 8px;
   border-radius: 24px;
-  background: linear-gradient(135deg, rgba(192,132,252,0.2), rgba(45,212,191,0.2));
+  
 }
 
 .image-border img {
-  width: 100%;
+  width: 90%;
   border-radius: 14px;
   display: block;
 }
