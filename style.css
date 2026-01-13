@@ -48,7 +48,7 @@
 .nav-mobile a {
   text-decoration: none;
   font-size: 14px;
-  color: #d1d5db;
+  color: white;
   transition: 0.3s;
 }
 
@@ -61,7 +61,7 @@
 }
 
 /* CTA Button */
-.cta-btn {
+.cta-btn  {
   background: #7c3aed;
   color: white;
   padding: 10px 24px;
@@ -70,6 +70,9 @@
   cursor: pointer;
   font-size: 14px;
   transition: 0.3s;
+}
+.cta-btn a{
+  color:white;
 }
 
 .cta-btn:hover {
@@ -127,6 +130,16 @@
 .hero-container {
   max-width: 1280px;
   margin: auto;
+}
+/* Badge */
+.badge {
+  display: inline-block;
+  background: rgba(37, 99, 235, 0.4);
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: 1px solid rgba(147, 197, 253, 0.3);
+  font-size: 16px;
+  margin-bottom: 24px;
 }
 
 .hero-grid {
