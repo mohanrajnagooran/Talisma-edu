@@ -121,6 +121,8 @@
   }
 }
 
+
+
 .hero {
   background: #1a0f2e;
   color: white;
@@ -273,6 +275,8 @@
   font-size: 24px;
   color: #1f2937;
 }
+/* image responsive */
+
 
 /* RESPONSIVE */
 @media (min-width: 768px) {
@@ -294,6 +298,19 @@
 
   .hero-form input {
     flex: 1;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .hero-image-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .image-border {
+    display: flex;
+    justify-content: center;
   }
 }
 
