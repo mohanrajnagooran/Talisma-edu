@@ -230,8 +230,8 @@
 /* FEATURES */
 .hero-features {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 12px 48px;
+  grid-template-columns: repeat( 1fr);
+  gap: 10px 40px;
   padding-top: 16px;
   padding-bottom: 16px;
 }
